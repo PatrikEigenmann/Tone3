@@ -12,33 +12,34 @@ This isn’t about not knowing the console—it’s about working smarter when t
 ```
 Tone3/  
 ├── bin/  
-    ├── Tone3.jar  
+│    ├── Tone3.jar  
 ├── build/  
-    ├── App.class             ← Entry point: sets up audio + GUI  
-    ├── Audio/  
-    │    ├── AudioPlayer.class         ← Handles audio line and playback loop  
-    │    ├── OutputMode.class          ← Enum: SINE, PINK, SPLIT  
-    │    ├── StereoGenerator.class     ← Core DSP: sine, pink, stereo logic  
-    │    └── PinkNoiseGenerator.class  ← (to be implemented)  
-    └── Gui/
-        ├── MainFrame.class           ← GUI logic: slider, mode toggle  
+│    ├── App.class                      ← Entry point: sets up audio + GUI  
+│    ├── Audio/  
+│    │    ├── AGenerator.class          ← Abstract parent class for generators.
+│    │    ├── AudioPlayer.class         ← Audio Player class.
+│    │    ├── SineWaveGenerator.class   ← Generates a SineWave.
+│    │    ├── PinkNoiseGenerator.class  ← Generates Pink Noise.
+│    │    └── [CustomGenerator].class   ← Your welcome to create your own customized generators.
+│    └── Gui/
+│         ├── MainFrame.class           ← GUI logic: slider, mode toggle.  
 ├── scripts/  
-    ├── compile.cmd  
-    ├── compile.sh  
-    ├── run.cmd  
-    ├── run.sh  
+│    ├── compile.cmd                    ← Compiles the project under Windows.
+│    ├── compile.sh                     ← Compiles the project under UNIX based systems.
+│    ├── run.cmd                        ← Runs the project under Windows.
+│    ├── run.sh                         ← Runs the project under UNIX based systems.
 ├── src/  
-    ├── App.java             ← Entry point: sets up audio + GUI  
-    ├── Audio/  
-    │    ├── AudioPlayer.java         ← Handles audio line and playback loop  
-    │    ├── OutputMode.java          ← Enum: SINE, PINK, SPLIT  
-    │    ├── StereoGenerator.java     ← Core DSP: sine, pink, stereo logic  
-    │    └── PinkNoiseGenerator.java  ← (to be implemented)  
-    └── Gui/  
-        ├── MainFrame.java           ← GUI logic: slider, mode toggle  
-        └── (additional components as needed)  
-├── LICENSE                  ← GNU General Public License  
-└── README.md                ← Project mission, usage, build instructions  
+│    ├── App.java                       ← Entry point: sets up audio + GUI  
+│    ├── Audio/  
+│    │    ├── AGenerator.java           ← Abstract parent class for generators.
+│    │    ├── AudioPlayer.java          ← Audio Player class
+│    │    ├── SineWaveGenerator.java    ← Generates a SineWave
+│    │    ├── PinkNoiseGenerator.java   ← Generates Pink Noise
+│    │    └── [CustomGenerator].java    ← Your welcome to create your own customized generators.
+│    └── Gui/  
+│         ├── MainFrame.java            ← GUI logic: slider, mode toggle  
+├── LICENSE                             ← GNU General Public License  
+└── README.md                           ← Project mission, usage, build instructions  
 ```
 ## Compile instructions:
 
