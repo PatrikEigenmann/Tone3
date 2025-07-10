@@ -16,10 +16,10 @@ Tone3/
 ├── build/  
     ├── App.class             ← Entry point: sets up audio + GUI  
     ├── Audio/  
-    │   ├── AudioPlayer.class         ← Handles audio line and playback loop  
-    │   ├── OutputMode.class          ← Enum: SINE, PINK, SPLIT  
-    │   ├── StereoGenerator.class     ← Core DSP: sine, pink, stereo logic  
-    │   └── PinkNoiseGenerator.class  ← (to be implemented)  
+    │    ├── AudioPlayer.class         ← Handles audio line and playback loop  
+    │    ├── OutputMode.class          ← Enum: SINE, PINK, SPLIT  
+    │    ├── StereoGenerator.class     ← Core DSP: sine, pink, stereo logic  
+    │    └── PinkNoiseGenerator.class  ← (to be implemented)  
     └── Gui/
         ├── MainFrame.class           ← GUI logic: slider, mode toggle  
 ├── scripts/  
@@ -30,10 +30,10 @@ Tone3/
 ├── src/  
     ├── App.java             ← Entry point: sets up audio + GUI  
     ├── Audio/  
-    │   ├── AudioPlayer.java         ← Handles audio line and playback loop  
-    │   ├── OutputMode.java          ← Enum: SINE, PINK, SPLIT  
-    │   ├── StereoGenerator.java     ← Core DSP: sine, pink, stereo logic  
-    │   └── PinkNoiseGenerator.java  ← (to be implemented)  
+    │    ├── AudioPlayer.java         ← Handles audio line and playback loop  
+    │    ├── OutputMode.java          ← Enum: SINE, PINK, SPLIT  
+    │    ├── StereoGenerator.java     ← Core DSP: sine, pink, stereo logic  
+    │    └── PinkNoiseGenerator.java  ← (to be implemented)  
     └── Gui/  
         ├── MainFrame.java           ← GUI logic: slider, mode toggle  
         └── (additional components as needed)  
