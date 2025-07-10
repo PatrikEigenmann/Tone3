@@ -8,8 +8,6 @@ It’s your fallback when gear doesn’t cooperate. Plug in a 3.5mm to dual XLR,
 
 This isn’t about not knowing the console—it’s about working smarter when time matters. Tone3 lets you say: "I’ve got this."
 
----
-
 ## Folder Structure
 
 Tone3/
