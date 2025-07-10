@@ -10,35 +10,35 @@ This isn’t about not knowing the console—it’s about working smarter when t
 
 ## Folder Structure
 
-Tone3/
-├── bin/
-    ├── Tone3.jar
-├── build/
-    ├── App.class             ← Entry point: sets up audio + GUI
-    ├── Audio/
-    │   ├── AudioPlayer.class         ← Handles audio line and playback loop
-    │   ├── OutputMode.class          ← Enum: SINE, PINK, SPLIT
-    │   ├── StereoGenerator.class     ← Core DSP: sine, pink, stereo logic
-    │   └── PinkNoiseGenerator.class  ← (to be implemented)
+Tone3/  
+├── bin/  
+    ├── Tone3.jar  
+├── build/  
+    ├── App.class             ← Entry point: sets up audio + GUI  
+    ├── Audio/  
+    │   ├── AudioPlayer.class         ← Handles audio line and playback loop  
+    │   ├── OutputMode.class          ← Enum: SINE, PINK, SPLIT  
+    │   ├── StereoGenerator.class     ← Core DSP: sine, pink, stereo logic  
+    │   └── PinkNoiseGenerator.class  ← (to be implemented)  
     └── Gui/
-        ├── MainFrame.class           ← GUI logic: slider, mode toggle
-├── scripts/
-    ├── compile.cmd
-    ├── compile.sh
-    ├── run.cmd
-    ├── run.sh
-├── src/
-    ├── App.java             ← Entry point: sets up audio + GUI
-    ├── Audio/
-    │   ├── AudioPlayer.java         ← Handles audio line and playback loop
-    │   ├── OutputMode.java          ← Enum: SINE, PINK, SPLIT
-    │   ├── StereoGenerator.java     ← Core DSP: sine, pink, stereo logic
-    │   └── PinkNoiseGenerator.java  ← (to be implemented)
-    └── Gui/
-        ├── MainFrame.java           ← GUI logic: slider, mode toggle
-        └── (additional components as needed)
-├── LICENSE                  ← GNU General Public License
-└── README.md                ← Project mission, usage, build instructions
+        ├── MainFrame.class           ← GUI logic: slider, mode toggle  
+├── scripts/  
+    ├── compile.cmd  
+    ├── compile.sh  
+    ├── run.cmd  
+    ├── run.sh  
+├── src/  
+    ├── App.java             ← Entry point: sets up audio + GUI  
+    ├── Audio/  
+    │   ├── AudioPlayer.java         ← Handles audio line and playback loop  
+    │   ├── OutputMode.java          ← Enum: SINE, PINK, SPLIT  
+    │   ├── StereoGenerator.java     ← Core DSP: sine, pink, stereo logic  
+    │   └── PinkNoiseGenerator.java  ← (to be implemented)  
+    └── Gui/  
+        ├── MainFrame.java           ← GUI logic: slider, mode toggle  
+        └── (additional components as needed)  
+├── LICENSE                  ← GNU General Public License  
+└── README.md                ← Project mission, usage, build instructions  
 
 ## Compile instructions:
 
@@ -46,7 +46,7 @@ Tone3/
 find ./src -name "*.java" > sources.txt  && javac -d build @sources.txt
 ```
 
-toneTo simplify this step, you can:
+To simplify this step, you can:
 
 - Create a **compile.sh/compile.cmd** script and place the above command inside. (pre recorded compile scripts can be found in the scripts/ folder.)
 
