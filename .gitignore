@@ -1,0 +1,8 @@
+# Ignore all Build artifacts
+/build/
+
+# Ignore all Mac OS meta data for folders
+*.DS_Store
+
+# Ignore the compiler helper sources.txt
+sources.txt
