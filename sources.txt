@@ -1,6 +1,0 @@
-./src/Tone3/Audio/AudioPlayer.java
-./src/Tone3/Audio/SineWaveGenerator.java
-./src/Tone3/Audio/PinkNoiseGenerator.java
-./src/Tone3/Audio/AGenerator.java
-./src/Tone3/Gui/MainFrame.java
-./src/App.java
