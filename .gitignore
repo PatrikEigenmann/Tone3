@@ -1,6 +1,9 @@
 # Visual Studio meta data
 .vscode/
 
+# Ignore all Binaries
+bin/
+
 # Ignore all Build artifacts
 build/
 
