@@ -28,7 +28,9 @@ Tone3/
 │    ├── compile.cmd                    ← Compiles the project under Windows.
 │    ├── compile.sh                     ← Compiles the project under UNIX based systems.
 │    ├── run.cmd                        ← Runs the project under Windows.
-│    ├── run.sh                         ← Runs the project under UNIX based systems.
+│    └── run.sh                         ← Runs the project under UNIX based systems.
+├── manifest/
+│    └──MANIFEST.MF                     ← Java manifest for building clickable jar files. 
 ├── src/  
 │    ├── App.java                       ← Entry point: sets up audio + GUI  
 │    ├── Audio/  
