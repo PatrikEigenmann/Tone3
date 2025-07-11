@@ -1,8 +1,11 @@
+# Visual Studio meta data
+.vscode/
+
 # Ignore all Build artifacts
-/build/
+build/
 
 # Ignore all Mac OS meta data for folders
-*.DS_Store
+.DS_Store
 
 # Ignore the compiler helper sources.txt
 sources.txt
