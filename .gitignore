@@ -1,11 +1,28 @@
+# Tone3 git hygiene: Ignore transient build artifacts, local binaries, and dev metadata.
+# External libraries (even custom ones) live in /lib and are tracked intentionally.
+
 # Visual Studio meta data
 .vscode/
 
 # Ignore all Binaries
 bin/
+*.exe
+*.dll
+*.so
+*.dylib
+*.jar
+
+# Do not ignore libraries in the lib folder
+!lib/*.dll
+!lib/*.so
+!lib/*.dylib
+!lib/*.jar
 
 # Ignore all Build artifacts
 build/
+*.class
+*.o
+*.obj
 
 # Ignore all Mac OS meta data for folders
 .DS_Store
