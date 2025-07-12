@@ -10,10 +10,12 @@ This isn’t about not knowing the console—it’s about working smarter when t
 
 ## Folder Structure
 
+The folders bin/, and build/ with their artifacts *.jar, *.exe, *.dll, *.so, etc will not be tracked, except libraries in the lib/ folder.
+
 ```
 Tone3/  
 ├── bin/  
-│    ├── Tone3.jar  
+│    ├── Tone3.jar                      ← Executable Application.
 ├── build/  
 │    ├── App.class                      ← Entry point: sets up audio + GUI  
 │    ├── Audio/  
@@ -23,10 +25,12 @@ Tone3/
 │    │    ├── PinkNoiseGenerator.class  ← Generates Pink Noise.
 │    │    └── [CustomGenerator].class   ← Your welcome to create your own customized generators.
 │    └── Gui/
-│         ├── MainFrame.class           ← GUI logic: slider, mode toggle.  
+│         └── MainFrame.class           ← GUI logic: slider, mode toggle.  
 ├── scripts/  
 │    ├── compile.cmd                    ← Compiles the project under Windows.
 │    ├── compile.sh                     ← Compiles the project under UNIX based systems.
+│    ├── pack.cmd                       ← Creates a jar of the project under Windows. 
+│    ├── pack.sh                        ← Creates a jar of the project under UNIX based systems.
 │    ├── run.cmd                        ← Runs the project under Windows.
 │    └── run.sh                         ← Runs the project under UNIX based systems.
 ├── manifest/
@@ -40,7 +44,7 @@ Tone3/
 │    │    ├── PinkNoiseGenerator.java   ← Generates Pink Noise
 │    │    └── [CustomGenerator].java    ← Your welcome to create your own customized generators.
 │    └── Gui/  
-│         ├── MainFrame.java            ← GUI logic: slider, mode toggle  
+│         └── MainFrame.java            ← GUI logic: slider, mode toggle  
 ├── LICENSE                             ← GNU General Public License  
 └── README.md                           ← Project mission, usage, build instructions  
 ```
